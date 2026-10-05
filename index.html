@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Next World</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: #0b0b0b;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            width: 100%;
+            padding: 18px 20px;
+            border-bottom: 1px solid #242424;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            color: #e50914;
+            font-size: 22px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        nav {
+            display: flex;
+            gap: 18px;
+        }
+
+        nav a {
+            color: #cccccc;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #e50914;
+        }
+
+        main {
+            width: 100%;
+            max-width: 1100px;
+            margin: auto;
+            padding: 35px 20px;
+        }
+
+        .welcome {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .welcome h1 {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .welcome p {
+            color: #999999;
+            font-size: 14px;
+        }
+
+        .section {
+            margin-bottom: 45px;
+        }
+
+        .section-title {
+            font-size: 19px;
+            margin-bottom: 18px;
+            border-left: 4px solid #e50914;
+            padding-left: 10px;
+        }
+
+        .books {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 18px;
+        }
+
+        .book {
+            text-decoration: none;
+            color: white;
+            display: block;
+        }
+
+        .book-cover {
+            width: 100%;
+            aspect-ratio: 2 / 3;
+            background: #1b1b1b;
+            border-radius: 5px;
+            overflow: hidden;
+            border: 1px solid #292929;
+        }
+
+        .book-cover img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .book-title {
+            font-size: 13px;
+            margin-top: 8px;
+            color: #dddddd;
+            text-align: center;
+        }
+
+        footer {
+            border-top: 1px solid #242424;
+            text-align: center;
+            padding: 25px;
+            color: #666666;
+            font-size: 12px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 700px) {
+            header {
+                padding: 15px;
+            }
+
+            .logo {
+                font-size: 18px;
+            }
+
+            nav {
+                gap: 10px;
+            }
+
+            nav a {
+                font-size: 12px;
+            }
+
+            main {
+                padding: 28px 15px;
+            }
+
+            .welcome h1 {
+                font-size: 25px;
+            }
+
+            .books {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 12px;
+            }
+
+            .book-title {
+                font-size: 11px;
+            }
+        }
+
+        @media (max-width: 420px) {
+            .books {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 9px;
+            }
+
+            .book-title {
+                font-size: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">NEXT WORLD</div>
+
+        <nav>
+            <a href="#">Início</a>
+            <a href="#">Livros</a>
+            <a href="#">Gêneros</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="welcome">
+            <h1>Bem-vindo ao Next World</h1>
+            <p>Entre em novos mundos através das histórias.</p>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Meus Livros</h2>
+
+            <div class="books">
+
+                <a href="#" class="book">
+                    <div class="book-cover"></div>
+                    <div class="book-title">Livro 1</div>
+                </a>
+
+                <a href="#" class="book">
+                    <div class="book-cover"></div>
+                    <div class="book-title">Livro 2</div>
+                </a>
+
+                <a href="#" class="book">
+                    <div class="book-cover"></div>
+                    <div class="book-title">Livro 3</div>
+                </a>
+
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Fantasia</h2>
+
+            <div class="books">
+
+                <a href="#" class="book">
+                    <div class="book-cover"></div>
+                    <div class="book-title">Livro de Fantasia</div>
+                </a>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        © 2026 Next World
+    </footer>
+
+</body>
+</html>
