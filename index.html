@@ -21,7 +21,7 @@
 
         header {
             width: 100%;
-            padding: 18px 20px;
+            padding: 12px 20px;
             border-bottom: 1px solid #242424;
             display: flex;
             align-items: center;
@@ -29,10 +29,14 @@
         }
 
         .logo {
-            color: #e50914;
-            font-size: 22px;
-            font-weight: bold;
-            letter-spacing: 2px;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 150px;
+            height: auto;
+            display: block;
         }
 
         nav {
@@ -129,11 +133,11 @@
 
         @media (max-width: 700px) {
             header {
-                padding: 15px;
+                padding: 10px 15px;
             }
 
-            .logo {
-                font-size: 18px;
+            .logo img {
+                width: 115px;
             }
 
             nav {
@@ -163,6 +167,10 @@
         }
 
         @media (max-width: 420px) {
+            .logo img {
+                width: 105px;
+            }
+
             .books {
                 grid-template-columns: repeat(3, 1fr);
                 gap: 9px;
@@ -178,13 +186,17 @@
 <body>
 
     <header>
-        <div class="logo">NEXT WORLD</div>
+
+        <div class="logo">
+            <img src="next%20world.jpeg" alt="Next World">
+        </div>
 
         <nav>
             <a href="#">Início</a>
             <a href="#">Livros</a>
             <a href="#">Gêneros</a>
         </nav>
+
     </header>
 
     <main>
