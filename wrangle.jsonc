@@ -5,5 +5,12 @@
   "assets": {
     "directory": ".",
     "binding": "ASSETS"
-  }
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "nextworld-db",
+      "database_id": "e6d9fb24-3bc1-4d8b-bea0-5177e9c8add5"
+    }
+  ]
 }
